@@ -1,4 +1,13 @@
 #hotel_image {
     height: 500px;
     width: 500px;
+    margin: 2% 4% 0%;
+}
+
+form {
+    margin: 0% 4% 1%;
+}
+
+#hotel-info {
+    margin: 1% 4% 2%;
 }

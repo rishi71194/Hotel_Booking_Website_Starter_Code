@@ -2,3 +2,23 @@
     height: 500px;
     width: 500px;
 }
+
+#hotel{
+    background-color: rgb(132,136,139);
+    width: 50%;
+    height: 20%;
+    margin: auto;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+#customer {
+    margin: 2%;
+}
+
+#amount {
+    margin: 2%;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 1% 2%;
+}
