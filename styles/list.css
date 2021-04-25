@@ -1,10 +1,42 @@
 #hotel_images {
     height: 200px;
     width: 250px;
+    
 }
 
 .hotel {
-    margin: 2%;
+    float: left;
+    display: block;
+    margin: 0% 5% 4% 5%;
     width: 40%;
     background-color: rgb(132,136,139);
+}
+
+#map-view {
+    height: 100px;
+}
+
+main nav {
+    text-align: center;
+}
+
+.view{
+    list-style: none;
+}
+
+#views {
+    display: inline-block;
+    margin: 20px 20px;
+    
+}
+
+#views a {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.hotel a{
+    color: black;
+    text-decoration: none;
 }
