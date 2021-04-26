@@ -12,26 +12,40 @@
                 <a href="login.html" target="_self" id="login-btn">Login</a>
             </header>
             <div class="content">
-                <img src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg" alt="radisson" id="hotel_image"><br>
-                <form action="payment.html" method="GET">
-                    <label for="noadults">Adults:</label>
-                    <input type="number" min="1" value="1" name="noadults"><br>
-                    <label for="name">Name:</label>
-                    <input type="text" name="name" required><br>
-                    <label for="from">From Date:</label>
-                    <input type="date" name="fromdate" required><br>
-                    <label for="to">To Date:</label>
-                    <input type="date" name="todate" required><br>
-                    <label for="total">Total:</label>
-                    <input type="text" disabled><br>
-                    <input type="submit" value="Book Now">
-                </form>
+                <div id="hotel-image"><img src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg" alt="radisson" id="hotel_image"></div>
+                <div id="cust-form">
+                    <form action="payment.html" method="GET">
+                        <div class="labels">
+                            <label for="noadults" class="labels">Adults:</label>
+                            <input type="number" min="1" value="1" name="noadults" style="width: 60%;">
+                        </div>
+                        <div class="labels">
+                            <label for="name" class="labels">Name:</label>
+                            <input type="text" name="name" style="width: 60%;" required>
+                        </div>
+                        <div class="labels">
+                            <label for="from" class="labels">From Date:</label>
+                        <input type="date" name="fromdate" style="width: 60%;" required>
+                        </div>
+                        <div class="labels">
+                            <label for="to" class="labels">To Date:</label>
+                            <input type="date" name="todate" style="width: 60%;" required>
+                        </div>
+                        <div class="labels">
+                            <label for="total" class="labels">Total:</label>
+                            <input type="text" style="width: 60%;" disabled>
+                        </div>
+                        
+                        <input type="submit" value="Book Now" id="submit-btn">
+                    </form>
+                </div>
+                
             </div>
             <div id="hotel-info">    
                 <h2>Radisson Blu Hotel</h2>
-                <p>RATING</p>
+                <p style="font-family: cursive; font-weight: bold;">RATING</p>
                 <p>5 Star</p>
-                <p>AMENITIES</p>
+                <p style="font-family: cursive; font-weight: bold;">AMENITIES</p>
                 <ul>
                     <li>Room service</li>
                     <li>Restaurant</li>
@@ -39,19 +53,18 @@
                     <li>Fitness center</li>
                     <li>Pool</li>
                 </ul>
-                <p><span style="font-weight: bold">DESCRIPTION</span></p>
+                <p><span style="font-family: cursive; font-weight: bold;">DESCRIPTION</span></p>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Dignissim suspendisse in est ante in nibh mauris cursus.</p>
             </div>
             <footer>
                 <span><a href="contact.html" target="_self" id="contact-btn">Contact Us</a></span>
-
+                <span style="font-size: 10px;">&copy; 2020 ROOM SEARCH PVT. LTD.</span>
                 <span class="social">
                     <a href="https://www.facebook.com" target="_blank"><img src="assests/images/facebook.png" id="smicons"></a>
                     <a href="https://www.instagram.com" target="_blank"><img src="assests/images/instagram.png" id="smicons"></a>
                     <a href="https://www.twitter.com" target="_blank"><img src="assests/images/twitter.png" id="smicons"></a>
                 </span> 
-                <br><br>
-                <span style="font-size: 10px;">&copy; 2020 ROOM SEARCH PVT. LTD.</span>
+                
         </footer>
         </div>
     </body>

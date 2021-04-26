@@ -1,15 +1,22 @@
 #hotel_images {
-    height: 200px;
-    width: 250px;
-    
+    height: 250px;
+    width: 300px;
+    align-self: flex-start;
+    display: block;
 }
 
 .hotel {
-    float: left;
-    display: block;
-    margin: 0% 5% 4% 5%;
-    width: 40%;
-    background-color: rgb(132,136,139);
+    margin: 2%;
+    width: 50%;
+    height: auto;
+    background-color: lightgrey;
+    display: flex;
+    flex: 30%; 
+}
+
+#list-view {
+    display: flex;
+    flex-wrap: wrap;
 }
 
 #map-view {
@@ -40,3 +47,9 @@ main nav {
     color: black;
     text-decoration: none;
 }
+
+.info {
+    flex: 1 1 auto;
+    margin: 2%;
+}
+

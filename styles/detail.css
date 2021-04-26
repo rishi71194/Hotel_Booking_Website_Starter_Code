@@ -1,7 +1,8 @@
 #hotel_image {
-    height: 500px;
+    height: 350px;
     width: 500px;
-    margin: 4% 4% 0%;
+    margin: 1% 4% 1%;
+
 }
 
 form {
@@ -10,4 +11,46 @@ form {
 
 #hotel-info {
     margin: 1% 4% 100px;
+}
+
+.content {
+    width:100%;
+    margin:0;
+    padding: 2%;
+    max-height:500px;
+    box-sizing: border-box;
+    display: flex;
+}
+
+#hotel-image {
+    width: 75%;
+    height: auto;
+    border: 2px solid black;
+    display: flex;
+    justify-content: center;
+}
+
+#cust-form {
+    width: 25%;
+    height: auto;
+    float:left;
+    overflow: hidden;
+    border: 2px solid black;
+}
+
+.labels {
+    margin: 2%;
+    height:max-content;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1%
+}
+
+#submit-btn {
+    padding: 1% 2%;
+    margin-left: 40%;
+    margin-top: 2%;
+    margin-bottom: 2%;     
 }
