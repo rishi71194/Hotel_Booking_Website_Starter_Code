@@ -27,9 +27,9 @@
 }
 
 #search_bar {
-    position: absolute;
+    position: sticky;
     transform: translate(-50%, -50%);
-    top:35%;
+    top:28%;
     left:50%;
     width: 30%;
     text-align: start;
@@ -64,6 +64,8 @@
     border-radius: 25%;
     box-shadow:10px 10px 10px 0px grey;
 }
+
+
 
 .card-top {
     opacity: 0;
