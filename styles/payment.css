@@ -1,3 +1,5 @@
+
+
 #hotel_image {
     max-height: 300px;
     max-width: 270px;
@@ -9,14 +11,14 @@
 
 #hotel{
     background-color: rgb(132,136,139);
-    max-width: 60%;
+    width: 60%;
     min-width: 25%;
     max-height: 20%;
     margin: auto;
     margin-top: 10%;
     margin-bottom: 2%;
     display: flex;
-    flex: 100%;
+
 }
 
 #customer p{
@@ -27,8 +29,8 @@
 
 #payment-btn {
     text-decoration: none;
-    color:black;
     margin: 6%;
+    color: white;
 }
 
 #amount {
@@ -52,4 +54,52 @@
     text-align: left;
     border: 1px solid black;
     border-radius: 5px;
+}
+
+@media only screen and (max-width: 768px) {
+
+    #payment-btn {
+        height: 20%;
+    }
+
+    .info {
+        display: flex;
+        flex-direction: column;
+        justify-content: first baseline;
+        margin: 3%;
+        width: 100%;
+    }
+    #hotel {
+        width: 90%;
+        margin-bottom: 4%;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+
+    #customer p {
+        margin: 4%;
+    }
+    #amount {
+        margin-left: 4%;
+    }
+    .payment_details{
+        flex-direction: column;
+    }
+    #payment-btn {
+        width: 30%;
+        align-self: center;
+    }
+    #hotel {
+        width: 100%;
+        flex-direction: column  ;
+        text-align: center;
+    }
+
+    #hotel_image {
+        max-height: 70%;
+        max-width: 70%;
+        margin: 0 auto;
+        margin-top: 2%;
+    }
 }

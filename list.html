@@ -1,12 +1,16 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <link rel="stylesheet" href="styles/list.css" type="text/css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="styles/common.css" type="text/css">
+        <link rel="stylesheet" href="styles/list.css" type="text/css">
+        
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script type="text/javascript" src="css3-mediaqueries.js"></script>
         <title>List</title>
     </head>
     <body>
@@ -51,38 +55,56 @@
                 <nav>
                     <ul class="nav nav-pills" id="pills-tab" role="tablist">
                         <li class="nav-item">
-                          <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#list-view" role="tab" aria-controls="pills-home" aria-selected="true" style="color: black;">List View</a>
+                          <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#list-tab" role="tab" aria-controls="pills-home" aria-selected="true" style="color: black;">List View</a>
                         </li>
                         <li class="nav-item">
-                          <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#map-view" role="tab" aria-controls="pills-profile" aria-selected="false" style="color: black;">Map View</a>
+                          <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#map-tab" role="tab" aria-controls="pills-profile" aria-selected="false" style="color: black;">Map View</a>
                         </li>
                     </ul>
                     <div class="tab-content" id="pills-tabContent">
-                        <div class="tab-pane fade show active" id="list-view" role="tabpanel" aria-labelledby="pills-home-tab">
+                        <div class="tab-pane fade show active" id="list-tab" role="tabpanel" aria-labelledby="pills-home-tab">
                             <div id="list-view">
                                 <div class="hotel">
-                                        <a href="detail.html"><img src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg" alt="radisson" id="hotel_images"></a>
+                                        <a href="detail.html"><img src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg" alt="radisson" class="hotel_images"></a>
                                         <div class="info">
                                             <h3><a href="detail.html">Radisson Blu Hotel</a></h3>
-                                            <p><a href="detail.html">5 Star</a></p>
+                                            <p>
+                                                <a href="detail.html"><span class="fa fa-star checked" ></span>
+                                                    <span class="fa fa-star checked" ></span>
+                                                    <span class="fa fa-star checked" ></span>
+                                                    <span class="fa fa-star checked" ></span>
+                                                    <span class="fa fa-star checked" ></span>
+                                                </a>
+                                            </p>
                                             <p><a href="detail.html">New Delhi</a></p>
                                         </div>
                                     
                                 </div>
                                 <div class="hotel">
-                                    <img src="https://media-cdn.tripadvisor.com/media/photo-w/15/06/31/5f/facade.jpg" alt="lalit" id="hotel_images">
+                                    <img src="https://media-cdn.tripadvisor.com/media/photo-w/15/06/31/5f/facade.jpg" alt="lalit" class="hotel_images">
                                     <div class="info">
                                         <h3>The Lalit New Delhi</h3>
-                                        <p>4.5 Star</p>
+                                        <p><span class="fa fa-star checked" ></span>
+                                            <span class="fa fa-star checked" ></span>
+                                            <span class="fa fa-star checked" ></span>
+                                            <span class="fa fa-star-half-o" id="half"></span>
+                                            <span class="fa fa-star " ></span>
+                                        </p>
                                         <p>New Delhi</p>
                                     </div>
                                     
                                 </div>
                                 <div class="hotel">
-                                    <img src="https://media-cdn.tripadvisor.com/media/photo-w/1b/4e/9b/11/exterior.jpg" alt="taj" id="hotel_images">
+                                    <img src="https://media-cdn.tripadvisor.com/media/photo-w/1b/4e/9b/11/exterior.jpg" style="margin:0 auto" alt="taj" class="hotel_images">
                                     <div class="info">
                                         <h3>Taj Palace</h3>
-                                        <p>4.0 Star</p>
+                                        <p>
+                                            <span class="fa fa-star checked" ></span>
+                                            <span class="fa fa-star checked" ></span>
+                                            <span class="fa fa-star checked" ></span>
+                                            <span class="fa fa-star checked" ></span>
+                                            <span class="fa fa-star" ></span>
+                                        </p>
                                         <p>New Delhi</p>
                                     </div>
                                     
@@ -91,10 +113,9 @@
                             </div>
                         </div>
 
-                        <div class="tab-pane fade" id="map-view" role="tabpanel" aria-labelledby="pills-profile-tab">
+                        <div class="tab-pane fade" id="map-tab" role="tabpanel" aria-labelledby="pills-profile-tab">
                                 <div id="map-view">
-                                 <img src ="https://cdn.pixabay.com/photo/2018/01/31/05/43/web-3120321_960_720.png" alt = "Map">
-                                
+                                    <img src ="https://cdn.pixabay.com/photo/2018/01/31/05/43/web-3120321_960_720.png" alt = "Map">
                                 </div>   
                             </div>
                       </div>

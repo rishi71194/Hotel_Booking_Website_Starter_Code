@@ -1,17 +1,18 @@
-#hotel_images {
+
+
+
+.hotel_images {
     height: 250px;
     width: 300px;
     align-self: flex-start;
-    
 }
 
 .hotel {
     margin: 2%;
-    width: 50%;
+    width: 45%;
     height: auto;
     background-color: lightgrey;
     display: flex;
-    flex: 30%; 
 }
 
 #list-view {
@@ -20,6 +21,9 @@
     height: 100%;
 }
 
+#map-view{
+    text-align: center;
+}
 main nav {
 
     margin-top: 2%;
@@ -76,4 +80,52 @@ nav ul{
 
 nav li{
     background-color: transparent;
+}
+
+.checked {
+    color: orange;
+}
+
+#half {
+    color: orange
+    
+}
+
+@media only screen and (max-width: 768px) {
+
+    #list-view {
+        flex-direction: column;
+        padding-bottom: 40%;
+    }
+    #map-view{
+        max-width: 768px;
+    }
+    #map-view img{
+        width: 90%;
+    }
+
+    .hotel {
+        margin: 2% auto;
+        width: 90%;
+        height: auto;
+    }
+
+}
+
+@media only screen and (max-width: 576px) {
+
+    #list-view {
+        padding-bottom: 40%;
+    }
+
+    .hotel {
+        flex-direction: column;
+    }
+
+    .hotel img {
+        width: 100%;
+        margin: 0 auto;
+        height: 2%;
+    }
+
 }

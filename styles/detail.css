@@ -1,16 +1,12 @@
-#hotel_image {
-    height: 350px;
-    width: 500px;
-    margin: 1% 4% 1%;
 
-}
 
 form {
     margin: 0% 4% 1%;
 }
 
 #hotel-info {
-    margin: 1% 4% 40%;
+    margin: 1% 4%;
+    padding-bottom: 10%;
 }
 
 .content {
@@ -24,10 +20,10 @@ form {
 
 #hotel-image {
     width: 75%;
-    height: auto;
     border: 2px solid black;
     display: flex;
     justify-content: center;
+    
 }
 
 #cust-form {
@@ -51,6 +47,54 @@ form {
 #submit-btn {
     padding: 1% 2%;
     margin-left: 40%;
-    margin-top: 2%;
+    margin-top: 30px;
     margin-bottom: 2%;     
+}
+
+.carousel-item {
+    width: 400px;
+    margin-top: 3%;
+}
+
+.carousel-inner {
+    padding: 3%;
+    margin-bottom: 2%;
+}
+
+.carousel-inner>.carousel-item {
+    z-index: -1;
+}
+
+.checked {
+    color: orange;
+}
+.carousel-control-prev {
+    margin-right:-29%;
+    width: 30px;
+}
+.carousel-control-next {
+    margin-left:-29%;
+    width: 30px;
+}
+
+
+@media only screen and (max-width: 768px) {
+
+    #hotel-image {
+        width: 65%;
+    }
+    #cust-form {
+        width: 35%;
+    }
+    .carousel-control-prev, .carousel-control-next {
+        margin: 0%;
+    }
+    .labels input {
+        width: 30%;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+
+    
 }

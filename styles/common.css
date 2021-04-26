@@ -25,6 +25,7 @@ body {
     width: 100%;
     top: 0;
     left:0;
+    z-index: 1;
     position: sticky;
     display: flex;
     justify-content: space-between;
@@ -96,6 +97,4 @@ body {
     text-align: center;
 }
 
-#loginModal {
-    z-index: 1000;
-}
+
