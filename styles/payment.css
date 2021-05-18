@@ -1,105 +1,104 @@
-
-
 #hotel_image {
-    max-height: 300px;
-    max-width: 270px;
-    display: flex;
-    flex-direction: column;
-    float:left;
-    flex: 40%;
+  max-height: 300px;
+  max-width: 270px;
+  display: flex;
+  flex-direction: column;
+  float: left;
+  flex: 40%;
 }
 
-#hotel{
-    background-color: rgb(132,136,139);
-    width: 60%;
-    min-width: 25%;
-    max-height: 20%;
-    margin: auto;
-    margin-top: 10%;
-    margin-bottom: 2%;
-    display: flex;
-
+#hotel {
+  background-color: rgb(132, 136, 139);
+  width: 60%;
+  min-width: 25%;
+  max-height: 20%;
+  margin: auto;
+  margin-top: 10%;
+  margin-bottom: 2%;
+  display: flex;
 }
 
-#customer p{
-    margin: 12%;
-    width: 100%;
+.content {
+  display: flex;
+  flex-direction: column;
 }
 
+#customer p {
+  margin: 12%;
+  width: 100%;
+}
 
 #payment-btn {
-    text-decoration: none;
-    margin: 6%;
-    color: white;
+  text-decoration: none;
+  margin: 6%;
+  color: white;
 }
 
 #amount {
-    margin: 4%;
+  margin: 4%;
 }
 
 .info {
-    display: flex;
-    flex-direction: column;
-    justify-content: first baseline;
-    margin:2%;
-    width:100%;
-    padding-right: 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: first baseline;
+  margin: 2%;
+  width: 100%;
+  padding-right: 10%;
 }
 
 .payment_details {
-    margin:2%;
-    background-color: rosybrown;
-    display: flex;
-    justify-content: space-around;
-    text-align: left;
-    border: 1px solid black;
-    border-radius: 5px;
+  margin: 2%;
+  background-color: rosybrown;
+  display: flex;
+  justify-content: space-around;
+  text-align: left;
+  border: 1px solid black;
+  border-radius: 5px;
 }
 
 @media only screen and (max-width: 768px) {
+  #payment-btn {
+    height: 20%;
+  }
 
-    #payment-btn {
-        height: 20%;
-    }
-
-    .info {
-        display: flex;
-        flex-direction: column;
-        justify-content: first baseline;
-        margin: 3%;
-        width: 100%;
-    }
-    #hotel {
-        width: 90%;
-        margin-bottom: 4%;
-    }
+  .info {
+    display: flex;
+    flex-direction: column;
+    justify-content: first baseline;
+    margin: 3%;
+    width: 100%;
+  }
+  #hotel {
+    width: 90%;
+    margin-bottom: 4%;
+  }
 }
 
 @media only screen and (max-width: 576px) {
+  #customer p {
+    margin: 4%;
+  }
+  #amount {
+    margin-left: 4%;
+  }
+  .payment_details {
+    flex-direction: column;
+  }
+  #payment-btn {
+    width: 30%;
+    align-self: center;
+  }
+  #hotel {
+    width: 100%;
+    flex-direction: column;
+    text-align: center;
+  }
 
-    #customer p {
-        margin: 4%;
-    }
-    #amount {
-        margin-left: 4%;
-    }
-    .payment_details{
-        flex-direction: column;
-    }
-    #payment-btn {
-        width: 30%;
-        align-self: center;
-    }
-    #hotel {
-        width: 100%;
-        flex-direction: column  ;
-        text-align: center;
-    }
-
-    #hotel_image {
-        max-height: 70%;
-        max-width: 70%;
-        margin: 0 auto;
-        margin-top: 2%;
-    }
+  #hotel_image {
+    max-height: 70%;
+    max-width: 70%;
+    margin: 0 auto;
+    margin-top: 2%;
+  }
 }
