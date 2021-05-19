@@ -51,6 +51,7 @@ footer {
 #logo {
   height: 60px;
   width: 60px;
+  z-index: 1;
 }
 
 #contact-btn {
